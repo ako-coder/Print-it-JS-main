@@ -17,19 +17,15 @@ const slides = [
 	}
 ]
 
-let arrowLeft = document.querySelectorAll(".arrow_left")
-arrowLeft.forEach(function(element) {
-    element.addEventListener('click', function() {
-      console.log('Flèche gauche cliquée');
-    });
-  });
+let arrowLeft = document.getElementById("arrow_l")
+arrowLeft.addEventListener('click', function() {    
+	throw new Error("To be implemented")
+});
+  
 
 
-let arrowRight = document.querySelectorAll(".arrow_right")
-arrowRight.forEach(function(element) {
-    element.addEventListener('click', function() {
-      console.log('Flèche droite cliquée');
-    });
-  });
-
-
+let arrowRight = document.getElementById("arrow_r")
+arrowRight.addEventListener('click', function() {
+	throw new Error("To be implemented")
+	//TODO: To be implemented
+});
