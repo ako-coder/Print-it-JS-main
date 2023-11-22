@@ -18,7 +18,18 @@ const slides = [
 ]
 
 let arrowLeft = document.querySelectorAll(".arrow_left")
-console.log(arrowLeft)
+arrowLeft.forEach(function(element) {
+    element.addEventListener('click', function() {
+      console.log('Flèche gauche cliquée');
+    });
+  });
+
 
 let arrowRight = document.querySelectorAll(".arrow_right")
-console.log(arrowRight)
+arrowRight.forEach(function(element) {
+    element.addEventListener('click', function() {
+      console.log('Flèche droite cliquée');
+    });
+  });
+
+
