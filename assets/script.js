@@ -41,8 +41,8 @@ function updateBannerContent() {
 // ---------- Événement : flèche gauche -------
 
 document.getElementById("arrow_l").addEventListener('click', function () {
-	currentIndex = (currentIndex - 1 + slides.length) % slides.length; 
 	// Gestion du débordement à gauche
+	currentIndex = (currentIndex - 1 + slides.length) % slides.length; 	
 	updateBannerContent();
 });
 
@@ -50,8 +50,8 @@ document.getElementById("arrow_l").addEventListener('click', function () {
 // ---------- Événement : flèche droite -------
 
 document.getElementById("arrow_r").addEventListener('click', function () {
-	currentIndex = (currentIndex + 1) % slides.length; 
 	// Gestion du débordement à droite
+	currentIndex = (currentIndex + 1) % slides.length; 	
 	updateBannerContent();
 });
 
